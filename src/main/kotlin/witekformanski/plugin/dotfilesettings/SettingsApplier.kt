@@ -22,7 +22,6 @@ class SettingsApplier {
 
     private fun getJson(inputFilePath: String): JSONObject? {
         val jsonData = File(inputFilePath).readText()
-        println("readText")
         return if (isValid(jsonData)) {
             JSONObject(jsonData)
         } else {
@@ -31,7 +30,6 @@ class SettingsApplier {
     }
 
     private fun getEditorFontSize(jsonSettings: JSONObject?): Double? {
-        println("getEditorFontSize")
         return try {
             val editorFont = jsonSettings?.getJSONObject("Editor")?.getJSONObject("Font")
             editorFont?.getDouble("Size")
@@ -75,10 +73,7 @@ class SettingsApplier {
 
 
     fun applyChanges(inputFilePath: String) {
-        println("apply")
         val jsonSettings = getJson(inputFilePath) ?: return
-        println("getJsonSettings")
-        println(getEditorFontSize(jsonSettings)?.toInt())
         ApplicationManager.getApplication().invokeLater {
             applyEditorFontSize(getEditorFontSize(jsonSettings))
             applyKeymapBindings(getKeymapBindings(jsonSettings))

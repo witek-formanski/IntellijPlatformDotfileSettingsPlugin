@@ -1,0 +1,10 @@
+{
+    "Editor": {
+        "Font": {
+            "Size": 20
+        }
+    },
+    "KeymapBindings": {
+        "EditorDeleteLine" : "ctrl K"
+    } 
+}

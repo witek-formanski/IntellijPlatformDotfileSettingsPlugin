@@ -1,0 +1,10 @@
+<idea-plugin>
+    <id>witekformanski.plugin.dotfilesettings</id>
+    <name>IntelliJ Platform Dotfile Settings Plugin</name>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <applicationListeners>
+        <listener class="witekformanski.plugin.dotfilesettings.OnActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+</idea-plugin>

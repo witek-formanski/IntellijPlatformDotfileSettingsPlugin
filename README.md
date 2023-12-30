@@ -12,4 +12,4 @@ Here is a draft implementation of an IntelliJ Platform plugin that configuration
 4. Set your Java language level to 17 or higher.
 5. Don't forget to select Settings > Advanced Settings > Download Resources option.
 6. Run Plugin.
-7. Edit .intellij-idea-settings dotfile in your root directory and see how IDE reacts.
+7. Edit .intellij-idea-settings dotfile in your home directory and see how IDE reacts.

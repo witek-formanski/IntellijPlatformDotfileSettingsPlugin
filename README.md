@@ -1,4 +1,4 @@
-# IntelliJ Platform Plugin Template
+# IntelliJ Platform Dotfile Settings Plugin
 
 ## About
 

@@ -2,7 +2,7 @@
 
 ## About
 
-Here is a draft implementation of an IntelliJ Platform plugin that configuration options from a dotfile and applies them to the IntelliJ IDEA IDE. As for now only KeymapBindings and EditorFontSize are supported.
+Here is a draft implementation of an IntelliJ Platform plugin that reads configuration options from a dotfile and applies them to the IntelliJ IDEA IDE. As for now only KeymapBindings and EditorFontSize are supported.
 
 ## How to use
 
